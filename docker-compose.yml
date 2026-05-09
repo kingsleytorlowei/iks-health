@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    image: iks-health-app
+    container_name: iks-health-app
+    ports:
+      - "8080:4000"
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      SERVE_FRONTEND: "1"
+    restart: unless-stopped
