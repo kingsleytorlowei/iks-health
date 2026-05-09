@@ -40,8 +40,11 @@ Open <http://localhost:5173>.
 ## Running the tests
 
 ```bash
-cd backend
-npm test
+# Backend (Vitest, decision engine + orchestrator)
+cd backend && npm test
+
+# Frontend (Vitest + React Testing Library + jsdom)
+cd frontend && npm test
 ```
 
 ## Layout

@@ -11,7 +11,6 @@ export default defineConfig({
       "/sse": {
         target: "http://localhost:4000",
         changeOrigin: true,
-        // SSE needs no buffering/timeout
         ws: false,
       },
     },
